@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dayplan-tui"
+version = "1.0.0"
+description = "Terminal-based todo list and calendar application"
+requires-python = ">=3.11"
+dependencies = [
+    "textual>=8.0,<9",
+    "rich>=13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "textual-dev>=1.6"]
+
+[project.scripts]
+dayplan = "dayplan.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dayplan = ["styles/*.tcss"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"

@@ -1,0 +1,218 @@
+Screen {
+    background: $background;
+    color: $text;
+}
+
+#shell {
+    height: 1fr;
+}
+
+Sidebar {
+    dock: left;
+    width: 26;
+    height: 1fr;
+    background: $panel;
+    border-right: solid $primary;
+}
+
+Sidebar .nav-title {
+    text-style: bold;
+    color: $accent;
+    padding: 1 2;
+}
+
+Sidebar Button {
+    width: 1fr;
+    margin: 0 1;
+    border: none;
+    background: transparent;
+    text-align: left;
+}
+
+Sidebar Button:hover {
+    background: $boost;
+}
+
+Sidebar Button.-active {
+    background: $accent;
+    color: $background;
+    text-style: bold;
+}
+
+#main {
+    width: 1fr;
+    height: 1fr;
+    overflow: hidden;
+}
+
+.screen-title {
+    height: auto;
+    padding: 0 0 1 0;
+    text-style: bold;
+    color: $accent;
+}
+
+StatusBar {
+    dock: bottom;
+    height: 1;
+    background: $panel;
+    color: $text-muted;
+    padding: 0 1;
+}
+
+.card-row {
+    height: auto;
+    layout: horizontal;
+}
+
+.stat-card {
+    width: 1fr;
+    height: auto;
+    padding: 1;
+    margin: 0 1 1 0;
+    border: round $primary;
+    background: $surface;
+}
+
+.stat-card .value {
+    text-style: bold;
+    color: $accent;
+}
+
+.stat-card .label {
+    color: $text-muted;
+}
+
+.panel {
+    height: auto;
+    border: round $primary;
+    padding: 1;
+    margin: 0 0 1 0;
+    background: $surface;
+}
+
+.panel-title {
+    text-style: bold;
+    color: $accent;
+    margin: 0 0 1 0;
+}
+
+DataTable {
+    height: 1fr;
+    border: round $primary;
+}
+
+.filter-row {
+    height: auto;
+    layout: horizontal;
+    margin: 0 0 1 0;
+}
+
+.filter-row > * {
+    margin: 0 1 0 0;
+}
+
+#search {
+    width: 32;
+}
+
+#status-filter, #priority-filter, #sort-filter {
+    width: 18;
+}
+
+.button-row {
+    height: auto;
+    layout: horizontal;
+    margin: 1 0 0 0;
+}
+
+.button-row Button {
+    margin: 0 1 0 0;
+}
+
+CalendarGrid {
+    height: auto;
+    border: round $primary;
+    padding: 1;
+}
+
+MonthNav {
+    height: auto;
+    layout: horizontal;
+    content-align: center middle;
+    margin: 0 0 1 0;
+}
+
+MonthNav Button {
+    margin: 0 1;
+}
+
+#cal-date {
+    width: 16;
+}
+
+MonthNav .month-label {
+    width: 28;
+    text-align: center;
+    text-style: bold;
+    color: $accent;
+}
+
+ModalScreen {
+    align: center middle;
+}
+
+.form-dialog {
+    width: 80%;
+    max-width: 78;
+    height: auto;
+    max-height: 90%;
+    border: round $accent;
+    background: $surface;
+    padding: 1 2;
+}
+
+.form-title {
+    text-style: bold;
+    color: $accent;
+    margin: 0 0 1 0;
+}
+
+.form-field {
+    height: auto;
+    margin: 0 0 1 0;
+}
+
+.form-field Label {
+    width: 20;
+}
+
+.confirm-dialog {
+    width: 60;
+    height: auto;
+    border: round $warning;
+    background: $surface;
+    padding: 1 2;
+}
+
+.timer-display {
+    height: auto;
+    text-align: center;
+    text-style: bold;
+    color: $accent;
+    padding: 2 0;
+}
+
+.progress-bar {
+    height: 1;
+}
+
+.shortcut-key {
+    width: 16;
+    color: $accent;
+    text-style: bold;
+}
+
+.tabs-content {
+    height: 1fr;
+}
